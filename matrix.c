@@ -52,9 +52,9 @@ void freemat(float **mat, int n)
 
 int main(){
 
-    //clock_t start_time, end_time;
-    //double cpu_time_used;
-    //start_time = clock();
+    clock_t start_time, end_time;
+    double cpu_time_used;
+    start_time = clock();
 
 
     int i,j,k,n;
@@ -106,9 +106,11 @@ int main(){
 
 
 
-    //end_time = clock();
-    //cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
-    //printf("execution time :%f seconds\n", cpu_time_used);
+    end_time = clock();
+    cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
+    printf("execution time :%f seconds\n", cpu_time_used);
+
+    printf("This code is created by Udit Kumar Tiwari. Roll-2351109 \n");
 
     
     return 0;
